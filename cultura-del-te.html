@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cultura del Té - Elegancia en cada sorbo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap');
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f5f2;
+        }
+        header {
+            background-color: #3a5a40;
+            color: white;
+            text-align: center;
+            padding: 2em;
+            position: relative;
+            overflow: hidden;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('/api/placeholder/800/400') no-repeat center center;
+            background-size: cover;
+            opacity: 0.3;
+            z-index: 0;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+        main {
+            max-width: 1000px;
+            margin: 2em auto;
+            padding: 0 2em;
+        }
+        .tea-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 2em;
+            margin-bottom: 2em;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tea-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: #3a5a40;
+            border-bottom: 2px solid #3a5a40;
+            padding-bottom: 0.5em;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1em;
+        }
+        .tea-types {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .tea-type {
+            text-align: center;
+            margin: 1em;
+            transition: transform 0.3s ease;
+        }
+        .tea-type:hover {
+            transform: scale(1.05);
+        }
+        .tea-icon {
+            font-size: 2em;
+            color: #3a5a40;
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 1em;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            main {
+                padding: 0 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>La Cultura del Té</h1>
+    </header>
+
+    <main>
+        <section class="tea-section">
+            <h2>Historia y Tradición</h2>
+            <p>El té, con sus orígenes en la antigua China, ha tejido su camino a través de los siglos, convirtiéndose en una parte integral de numerosas culturas. Desde las montañas brumosas de Asia hasta las elegantes salas de té europeas, cada sorbo de té cuenta una historia de comercio, ritual y refinamiento.</p>
+            <img src="/api/placeholder/800/400" alt="Antigua ceremonia del té">
+        </section>
+
+        <section class="tea-section">
+            <h2>Variedades de Té</h2>
+            <p>El mundo del té es tan diverso como fascinante. Cada variedad ofrece un perfil único de sabores y aromas, invitando a un viaje sensorial con cada taza.</p>
+            <div class="tea-types">
+                <div class="tea-type">
+                    <i class="fas fa-leaf tea-icon"></i>
+                    <p>Té Verde</p>
+                </div>
+                <div class="tea-type">
+                    <i class="fas fa-mug-hot tea-icon"></i>
+                    <p>Té Negro</p>
+                </div>
+                <div class="tea-type">
+                    <i class="fas fa-yin-yang tea-icon"></i>
+                    <p>Té Oolong</p>
+                </div>
+                <div class="tea-type">
+                    <i class="far fa-snowflake tea-icon"></i>
+                    <p>Té Blanco</p>
+                </div>
+                <div class="tea-type">
+                    <i class="fas fa-mountain tea-icon"></i>
+                    <p>Té Pu-erh</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tea-section">
+            <h2>Beneficios del Té</h2>
+            <p>Más allá de su sabor cautivador, el té es apreciado por sus propiedades benéficas. Rico en antioxidantes, ofrece un refugio de calma en nuestras vidas agitadas, promoviendo la claridad mental y el bienestar general. Cada variedad aporta sus propios beneficios únicos, convirtiendo cada taza en una inversión en salud y vitalidad.</p>
+        </section>
+
+        <section class="tea-section">
+            <h2>El Arte de la Ceremonia del Té</h2>
+            <p>En muchas culturas, el acto de preparar y servir té trasciende lo mundano para convertirse en un arte refinado. La ceremonia japonesa del té, o chanoyu, ejemplifica esta transformación, elevando un simple acto cotidiano a una práctica meditativa de atención plena y respeto. Estas tradiciones nos recuerdan que tomarse el tiempo para apreciar los pequeños momentos puede enriquecer enormemente nuestras vidas.</p>
+            <img src="/api/placeholder/800/400" alt="Ceremonia japonesa del té">
+        </section>
+    </main>
+</body>
+</html>
